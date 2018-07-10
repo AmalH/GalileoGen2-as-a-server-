@@ -103,7 +103,7 @@ function readTempSensorValue() {
 
 //----------------------------------------- Services ---------------------------------
 function testAlert() {
-    request.get("http://192.168.236.1:4300/setAlertTemp",function (error, responce, body){
+    request.get("http://192.168.40.1:2626/getTempSeuil",function (error, responce, body){
         if(!error && responce.statusCode == 200 )
             {console.log(body)
             }
